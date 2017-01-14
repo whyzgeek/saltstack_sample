@@ -1,0 +1,51 @@
+#list of development packages
+dev:
+  pkg:
+    - installed
+    - names:
+        - zlib-devel
+        - bzip2-devel
+        - openssl-devel
+        - ncurses-devel
+        - sqlite-devel
+        - readline-devel
+        - libxml2-devel
+        - libxslt-devel
+        - tk-devel
+        - gcc
+        - make
+        - bison
+        - byacc
+        - cscope
+        - ctags
+        - diffstat
+        - doxygen
+        - flex
+        - gcc
+        - gcc-c++
+        - gcc-gfortran
+        - gettext
+        - git
+        - indent
+        - intltool
+        - libtool
+        - patch 
+        - patchutils
+        - rcs
+        - redhat-rpm-config
+        - rpm-build
+        - subversion
+        - swig
+        - systemtap
+        - db4-devel
+        - expat-devel
+        - gdbm-devel
+        - gmp-devel
+        - libffi-devel
+        - systemtap-sdt-devel
+        - tix-devel
+        - valgrind-devel
+        - rpmdevtools
+        - rpmlint
+    - skip_verify: True
+
