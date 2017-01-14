@@ -1,11 +1,11 @@
 # To have a machine with core modules.
-# only add 'empty:' role
+# only add 'empty:' role as placeholder
 hosts:        
      192.168.2.8:
         desc: "salt master and all repos (git, yum)"
         env: live
         roles:
-            python-stack: True
+            python-stack: True  # We use version as value if True means whatever that's available
             salt-master: True
      192.168.2.10: 
         desc: "Test App Server"
@@ -13,7 +13,7 @@ hosts:
         roles:
             python-stack: True
             redis: True
-            pyapps.defaultweb: '1.0'  # Sample should be changed
+            pyapps.default-webapp: '1.0'  # Sample should be changed
             dev-tools: True
             cassandra: True
             rabbitmq: True
@@ -25,9 +25,9 @@ hosts:
         desc: "App server 1"
         env: live
         roles:
+            pyapps.default-webapp: '1.0'  # Sample should be changed
             redis: True
             python-stack: True
-            pyapps.defaultweb: '1.0'  # Sample should be changed
             cassandra: True
             rabbitmq: True
      192.168.1.11:
@@ -36,7 +36,7 @@ hosts:
         roles:
             redis: True
             python-stack: True
-            pyapps.defaultweb: '1.0'  # Sample should be changed
+            pyapps.default-webapp: '1.0'  # Sample should be changed
             cassandra: True
             rabbitmq: True
             rabbitmq: True
