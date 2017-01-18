@@ -11,7 +11,7 @@ groups:
       gid: 1001
       users:
         whyzgeek:
-            name: Kiarash Bodouhi
+            name: whyzgeek
             uid: 2001
             pkey: True
             password: x
